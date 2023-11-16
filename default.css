@@ -1,0 +1,63 @@
+/* Styles for the header */
+#header {
+    background-color: #fd75ef; /* Pink background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styles for the menu */
+#menu {
+    background-color: #fd9bfa; /* Pink background color */
+    color: #fff; /* White text color */
+    padding: 10px;
+    text-align: center;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff; /* White text color */
+}
+
+/* Styles for the content sections */
+#content {
+    padding: 20px;
+}
+
+/* Styles for the example section with the TikTok video */
+#example {
+    background-color: #fff; /* White background color */
+    padding: 20px;
+    text-align: center;
+}
+
+#contact {
+    color: #000000; /* White text color */
+    text-align: center;
+}
+/* Styles for the footer */
+#footer {
+    background-color: #fd75ef; /* Pink background color */
+    color: #fff; /* White text color */
+    padding: 10px;
+    text-align: center;
+}
+#imgfloat  {
+    float: right;    
+     margin: 0 0 0 15px;
+    }
+/* #img {
+    max-width: 30%;
+    height: auto;
+} */
