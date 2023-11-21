@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family:'Courier New'
 }
 
 /* Styles for the header */
@@ -19,8 +19,8 @@ body {
     padding: 10px;
     position: absolute;
     top: 80px;
-    left: 34%;
-    width: 30%;
+    left: 31%;
+    width: 36%;
     text-align: center;
 }
 
