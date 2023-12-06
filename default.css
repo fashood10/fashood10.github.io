@@ -1,77 +1,121 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family:'Courier New'
+body{
+    background-color: #fdc4f7;
+    font-family: 'Times New Roman', serif;
 }
 
-/* Styles for the header */
-#header {
-    background-color: #fd75ef; /* Pink background color */
-    color: #fff; /* White text color */
-    padding: 20px;
-    text-align: center;
+h1{
+    color: #8f4ff7;
 }
 
-/* Styles for the menu */
-#menu {
-    background-color: #fd9bfa; /* Pink background color */
-    color: #fff; /* White text color */
-    padding: 10px;
+h2{
+    color: #8f4ff7;
+    font-size: 24px;
+}
+
+
+p, hr{
+    font-family: 'Times New Roman', serif;
+    font-size: 30px;
+}
+
+a{
+    color: rgb(0, 5, 144);
+}
+
+img{
+    border-style: solid;
+    border-width: 10px; 
+    border-color: #620093;
     position: absolute;
-    top: 80px;
-    left: 31%;
-    width: 36%;
-    text-align: center;
 }
 
-#menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 
-#menu ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-#menu a {
-    text-decoration: none;
-    color: #fff; /* White text color */
-}
-
-/* Styles for the content sections */
-#content {
-    padding: 20px;
-}
-
-/* Styles for TikTok video */
-#example {
-    background-color: #fff; /* White background color */
-    padding: 20px;
-    text-align: center;
-}
-
-#contact {
-    color: #000000; /* White text color */
-    text-align: center;
-}
-/* Styles for the footer */
-#footer {
-    background-color: #fd75ef; /* Pink background color */
-    color: #fff; /* White text color */
-    padding: 10px;
-    text-align: center;
+#title{
+    font-size: 80px;
+    color: rgb(0, 5, 144);
     position: absolute;
-    bottom: 10;
-    width: 100%;
-
+    top: 50px;
+    left: 500px;
 }
-#imgfloat  {
-    float: right;    
-     margin: 0 0 0 15px;
-    }
-/* #img {
-    max-width: 30%;
-    height: auto;
-} */
+
+#hd1{
+    left:200px;
+}
+
+#hd2{
+    left:400px;
+}
+
+#hd3{
+    left:600px;
+}
+
+#hd4{
+    left:800px;
+}
+
+#hd5{
+    left:1000px;
+}
+
+
+#feat{
+    position:absolute;
+    top:250px;
+    left:40px;
+}
+
+#part1{
+    position:absolute;
+    top:300px;
+    left:50px;
+}
+
+#part2{
+    position:absolute;
+    top:600px;
+    left:590px;
+}
+
+#part3{
+    position:absolute;
+    top:1050px;
+    left:50px;
+}
+
+#cat1 img{
+    width:450px;
+    height:300px;
+    position:absolute;
+    left:760px;
+    top:275px;
+}
+
+#cat2 img{
+    width:450px;
+    height:340px;
+    position:absolute;
+    left:50px;
+    top:650px;
+}
+
+#cat3 img{
+    width:500px;
+    height:400px;
+    position:absolute;
+    left:840px;
+    top:1050px;
+}
+
+.head-category{
+    position: absolute;
+    top: 175px;
+    background-color: lightblue;
+    padding: 5px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    font-size: 22px;
+    padding: 10px;
+}
+
