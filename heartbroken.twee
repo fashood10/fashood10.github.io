@@ -1,0 +1,632 @@
+:: StoryTitle
+Heather Eng
+
+
+:: StoryData
+{
+  "ifid": "A58F12CC-DD15-4254-8C40-E780D30E0D09",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "start",
+  "zoom": 1
+}
+
+
+:: Agree to go out with him and see where it leads {"position":"675,900","size":"100,100"}
+You decide to go ahead and agree to go out with him and see where it leads. After all, you've come this far, and you want to see if he really falls for your catfishing or if he's just playing along.
+
+You set up a date and time to meet him at a local bar. When you arrive, he's already there, sipping on a cocktail. He stands up when he sees you and smiles, making your heart skip a beat.
+
+As the night goes on, you can feel yourself starting to like him. He's funny, charming, and easy to talk to. But then he starts to ask questions about your friend, and you realize that you can't keep the charade up any longer.
+
+You come clean about catfishing him and using your friend's photos. He's understandably upset, and you feel terrible.
+
+In the end, you lose both Jack and your friend. She finds out about what you did, and she can't forgive you for it. You're left feeling alone and regretful, realizing that your actions had bigger consequences than you had ever imagined.
+
+
+:: Bench {"position":"1200,1675","size":"100,100"}
+<h2><b>An Quiet Bench</b></h2>
+
+An old bench sits in front of you.
+
+The building lies to the [[North|Outside]]. 
+You see light in the windows of a small cottage to the [[East|Cottage]].
+You notice a hill rising to the [[West|Hill]].
+
+
+:: Cottage {"position":"825,1975","size":"100,100"}
+<h2><b>Gravekeeper's Cottage</b></h2>
+
+Lights shine through the windows of the gravedigger's dilapidated home.
+<<if $flipSwitch is true>>\
+You refuse to re-enter the cottage.
+<<elseif $hasKey is false>>\
+<i>The door is locked shut.</i>
+<<else>>\
+
+Use the key to open the [[door|Inside]].
+<</if>>\
+
+The gate is to the [[North|Gate]]. 
+An old bench lies to the [[West|Bench]]. 
+
+
+:: Date with Kevin {"position":"525,1225","size":"100,100"}
+You agree to meet up with Kevin for coffee the following week. When you meet him, you notice that he looks just like his pictures and is very kind and respectful. You enjoy your conversation and decide to go on a second date with him. The more you get to know him, the more you realize that he might be the one you've been searching for.
+
+You both decide to take your relationship slow and see where things go. Over time, you grow closer and start to fall in love. It takes time and patience, but it's worth it.
+
+[[Yippie!]]
+
+
+:: End {"position":"450,2350","size":"100,100"}
+<h2><b>Into Darkness</b></h2>
+
+The cold night air hits your face as you sprint away from John and his malevolence behind. Freedom tastes bitter, tainted by the darkness that lingers. You vow never to trust easily, the scars of betrayal etched deep. The night becomes your refuge, but your heart carries the shadows of an unforgettable encounter, and the idea of another date becomes a distant memory.
+
+<h2>THE END</h2>
+
+
+:: Fountain {"position":"850,1625","size":"100,100"}
+<h2><b>A Fountain</b></h2>
+
+In front of you is a dried out fountain with a statue of the Grim Reaper.
+
+Many graves spread out to the [[East|Graves]].
+<<if $unconscious is true>>\
+You see a silhouette to the [[West|Unconscious]].
+<<elseif $hasKey is false>>\
+You see a silhouette to the [[West|Gravedigger]].
+<<else>>\
+You see a silhouette to the [[West|Unconscious]].
+<</if>>\
+The building lies to the [[South|Outside]].
+
+
+:: Gate {"position":"650,2125","size":"100,100"}
+<h2><b>The Gate</b></h2>
+
+<<if $flipSwitch is false>>\
+The gate to the building is closed and will not budge.
+<i>There must be a mechanism to open it somewhere.</i>
+<<else>>\
+The gates are now open.
+You may [[leave|End]].
+<</if>>\
+
+Many graves spread out to the [[North|Graves]].
+You see light in the windows of a small cottage to the [[South|Cottage]].
+The building lies to the [[West|Outside]]. 
+
+
+:: Gravedigger {"position":"1075,1500","size":"100,100"}
+<h2><b>A Creepy Gravedigger</b></h2>
+
+There is a strange man muttering to himself as he looks out over the graves.
+<<if $hasShovel is false>>\
+You are too scared to approach him.
+<</if>>\
+<i>He appears to have an old <b>key</b> dangling from his belt.</i>
+<<if $hasShovel is true>>\
+
+Hit him with the [[shovel|Unconscious]].
+<</if>>\
+
+You see a fountain to the [[East|Fountain]]. 
+A path runs to the [[South|Path]]. 
+
+
+:: Graves {"position":"525,1850","size":"100,100"}
+<h2><b>Rows of Graves</b></h2>
+
+There are rows of graves spread out before you.
+<<if $hasShovel is false>>\
+You notice an open grave with a <b>shovel</b> near it.
+
+<<linkreplace "Take the shovel.">>\
+You take the shovel.\
+<<set $hasShovel to true>>\
+<</linkreplace>>
+<<else>>\
+You notice an open grave.
+<</if>>\
+
+The gate is to the [[South|Gate]]. 
+You see a fountain to the [[West|Fountain]]. 
+
+
+:: Hill {"position":"1175,1975","size":"100,100"}
+<h2><b>Hilltop</b></h2>
+
+From the top of this small hill you can see a dark shape far to the north.
+A building and many graves are to the northeast.
+Far to the east you can see light coming from a small building.
+
+A path runs to the [[North|Path]]. 
+An old bench lies to the [[East|Bench]]. 
+
+
+:: Inside {"position":"1075,2150","size":"100,100"}
+<h2><b>Inside the Cottage</b></h2>
+
+The musty interior is cluttered and unkempt.
+You see a switch to open the main gates.
+
+<<linkreplace "Flip the switch.">>\
+As you reach for the switch, you notice movement to your right.
+As you look, you see a horrible, shambling figure staring at you.
+<i>You start in fright before realizing you are looking at a <b>mirror</b></i>.
+
+Fresh horror grips you at the revelation of what you are, and you [[flee the cottage|Cottage]].
+<<set $flipSwitch to true>>\
+<</linkreplace>>\
+
+
+:: Keep pretending like you don't know who he is or what he's talking about {"position":"800,775","size":"100,100"}
+You decide to play it cool and keep pretending like you don't know who he is. "Hmmm, interesting. Well, I'm not really sure. Maybe we've just got doppelgangers out there."
+
+Jack laughs, seeming to take it in stride. "Yeah, I guess maybe that's it. So, do you want to grab a drink sometime and see if we can solve this mystery together?"
+
+You pause for a moment, considering your options. Do you want to take things further and potentially hurt him, or do you want to come clean now and spare both of you the embarrassment and pain?
+
+* [[Agree to go out with him and see where it leads]] or [[Tell him the truth and apologize for catfishing him]].
+
+<img src="https://github.com/fashood10/fashood10.github.io/blob/main/catfish.jpg?raw=true" width="500" height="300">
+
+
+:: Outside {"position":"750,1800","size":"100,100"}
+<h2><b>Outside the building</b></h2>
+
+<<if $start is false>>\
+Rushing outside, the door slams shut behind you.
+<<set $start to true>>\
+<</if>>\
+You are outside of a building in the middle of no where.
+You cannot open the door.
+
+You see a fountain to the [[North|Fountain]].
+The gate is to the [[East|Gate]].
+An old bench lies to the [[South|Bench]].
+A path runs to the [[West|Path]].
+
+
+:: Path {"position":"275,1800","size":"100,100"}
+<h2><b>A Lonely Path</b></h2>
+
+You are on an empty path, surrounded by graves.
+
+<<if $unconscious is true>>\
+You see a silhouette to the [[North|Unconscious]].
+<<elseif $hasKey is false>>\
+You see a silhouette to the [[North|Gravedigger]].
+<<else>>\
+You see a silhouette to the [[North|Unconscious]].
+<</if>>\ 
+The building lies to the [[East|Outside]]. 
+You notice a hill rising to the [[South|Hill]]. 
+
+
+:: Say maybe, you’re not sure. Tell him you have a bad memory and you need some clues to jog it. {"position":"850,625","size":"100,100"}
+Jack seems eager to keep the conversation going. "Well, you have the same smile as my ex. And the same eyes. And, well, pretty much everything else. Are you sure we haven't met before?"
+
+You can feel yourself getting excited. This is exactly what you wanted - to see if he still had feelings for your friend, and if he would fall for your catfishing scheme. You decide to push it a little further.
+
+[[Keep pretending like you don't know who he is or what he's talking about]] or [[Tell him the truth and apologize for catfishing him]].
+
+
+
+:: Say that your his ex's best friend {"position":"1025,600","size":"100,100"}
+You feel a twinge of guilt as you type out your response. "Actually, we haven't met before. But I am friends with your ex. She talks about you all the time."
+
+There's a long pause before Jack responds. "Oh. Well, in that case, can you tell her I said hi? And that I hope she's doing well?"
+
+You can't help but feel disappointed. This wasn't the reaction you were hoping for. You had wanted to see if he still had feelings for your friend, and if he would fall for your catfishing scheme. But now you realize that you don't want to hurt him, or your friend, anymore.
+
+[[Tell him the truth and apologize for catfishing him]]or [[create an account using your information]]
+
+
+:: StoryCaption {"position":"2075,325","size":"100,100"}
+<span id="items"><b><u>Items:</u></b></span>
+<<if $hasShovel is true>>Shovel<</if>>
+<<if $hasKey is true>>Key<</if>>
+
+
+:: StoryInit {"position":"1700,200","size":"100,100"}
+<<set $start to false>>
+<<set $hasShovel to false>>
+<<set $hasKey to false>>
+<<set $unconscious to false>>
+<<set $flipSwitch to false>>
+
+
+
+
+:: Tell him the truth and apologize for catfishing him {"position":"1075,875","size":"100,100"}
+You decide to come clean about catfishing him and apologize. You feel guilty about leading him on like this and using your friend's photos.
+
+When you tell him, he's understandably upset and hurt. He thought he had made a connection with someone he had met online, only to find out it was all a lie.
+
+He blocks you on all social media, and you never hear from him again. Your friendship with your friend is also strained, and she can't seem to forgive you for what you did.
+
+You're left feeling guilty and alone, realizing that your actions had bigger consequences than you had ever imagined.
+
+Oh well your young have fun!
+
+* [[be single and hang out with your best friends]]
+
+
+:: Unconscious {"position":"375,1600","size":"100,100"}
+<h2><b>The Unconscious Gravedigger</b></h2>
+<<if $unconscious is false>>\
+<</if>>
+The gravedigger lies knocked out before you.
+
+<<set $unconscious to true>>\
+<<if $hasKey is false>>\
+<<linkreplace "Take the key.">>\
+You grab the key.\
+<<set $hasKey to true>>\
+<</linkreplace>>
+
+<</if>>\
+You see a fountain to the [[East|Fountain]]. 
+A path runs to the [[South|Path]]. 
+
+
+:: Yippie! {"position":"625,1450","size":"100,100"}
+Congratulations! You took a chance on love and it paid off.
+
+<img src="https://github.com/fashood10/fashood10.github.io/blob/main/yippie.jpg?raw=true" width="500" height="300">
+
+
+:: You decide to give things a chance with Jack and start a new relationship. {"position":"1300,725","size":"100,100"}
+You decide to take a chance and start a new relationship with Alex. You've been spending a lot of time together and he's made you very happy.
+
+You talk to him about your feelings and he's thrilled. He tells you how much he cares about you and how he's been hoping you'd feel the same.
+
+As your relationship progresses, you start to realize how different it is from your previous one with Jack. Alex treats you with kindness, love, and respect. He never makes you feel like you're anything less than amazing.
+
+Over time, you fall more deeply in love with Jack and he with you. You're grateful to have found someone who is such a good match for you.
+
+Together, you build a happy life full of love, laughter, and adventure. You're thrilled to have given things a chance with Alex and to be starting a new chapter in your life.
+
+[[Yippie!]]
+
+
+:: You decide to take a chance and talk to the man. {"position":"1200,525","size":"100,100"}
+You decide to take a chance and talk to the man. You take a deep breath and walk over to him. As you get closer, you feel nervous but determined.
+
+As you approach him, you notice that he is smiling at you. You introduce yourself and he does the same, telling you his name is Jack. You both start talking and you realize that you have a lot in common. He's kind, funny, and you feel like you can be yourself around him.
+
+Eventually, the night comes to an end, and you have to say goodbye. You exchange numbers and promise to keep in touch.
+
+<img src="https://github.com/fashood10/fashood10.github.io/blob/main/cuddle.jpg?raw=true" width="200" height="100" style="float: right; margin-right: 10px;"> 
+
+
+Over the next few weeks, you and Jack start seeing each other more often. You both enjoy spending time together, whether it's going out or just hanging out at home. You feel happy and content with him, and start to realize that you may be ready for a new relationship after all.
+
+What do you do?
+
+*[[You decide to give things a chance with Jack and start a new relationship.]]
+*[[You decide to wait a little longer and make sure your feelings are genuine.]]
+
+
+:: You decide to wait a little longer and make sure your feelings are genuine. {"position":"1700,650","size":"100,100"}
+A few more weeks go by, and you still have strong feelings for Jack. You decide to tell him how you feel, but he tells you that he has moved on and is seeing someone else. You feel heartbroken but also regretful that you waited too long. 
+
+You learn that sometimes, you need to take chances and make decisions when you feel good about them, or risk waiting too long and missing out on opportunities.
+
+This is a bad ending. Do you want to [[start]] over?
+
+
+:: You feel hesitant and decide to stay with your friends.\  {"position":"1525,775","size":"100,100"}
+You decide to stay with your friends and have a good time with them. They make you laugh and you feel grateful for their company. As the night goes on, you start to forget about the man at the other end of the bar. 
+
+As you and your friends decide to leave, the man stands up and starts walking over to you. Your heart races as he introduces himself and tells you he couldn't take his eyes off you all night. He asks for your number, and you feel a rush of excitement.
+
+<img src="https://github.com/fashood10/fashood10.github.io/blob/main/bar.jpg?raw=true" width="200" height="100" style="float: right; margin-right: 10px;"> 
+
+You decide to take a chance and give him your number. Over the next few weeks, you and the man, whose name is Jack, start to see each other more often. You both enjoy spending time together, and soon you realize that you have developed strong feelings for him. 
+
+What do you want to do?
+* [[You decide to give things a chance with Jack and start a new relationship.]] or [[You decide to wait a little longer and make sure your feelings are genuine.]]
+
+
+:: accept his invite {"position":"200,1175","size":"100,100"}
+You decide to accept John's invitation to go hiking, even though you're not really into hiking. You think it might be a good opportunity to get to know him better. 
+
+On the day of the hike, John shows up at your place with and you drive out to the trailhead together. As you start hiking, you realize that the trail is much steeper and more challenging than you expected. Your legs start to ache and you struggle to keep up with John.
+
+<img src="https://github.com/fashood10/fashood10.github.io/blob/main/hike.jpg?raw=true" width="200" height="200" style="float: right; margin-right: 10px;"> 
+
+To make matters worse, John seems to have a mean streak. He starts making fun of you for being out of shape and not keeping up. You feel embarrassed and frustrated, but also determined to prove him wrong. 
+
+After a few hours of grueling hiking, you finally reach the summit. The view is breathtaking and for a moment you forget about your discomfort. John takes out his phone to take a picture of you, but instead of a regular photo, he starts recording a video of you struggling to catch your breath. He hands you a water from his bag and you drink the entire bottle. 
+
+ You feel lightheaded and things go black
+ 
+ [[wake up]]
+
+
+:: accept his offer {"position":"25,1275","size":"100,100"}
+You decide to accept Tyler's offer to go out again, feeling happy and optimistic about the future. You both exchange numbers and make plans for your next date.
+
+Over the next few weeks, you and Tyler go on a few more dates and get to know each other better. You start to realize that he's a kind and genuine person, and you feel lucky to have met him.
+
+Eventually, Tyler asks if you'd like to be exclusive and start a relationship. You feel like the time is right, and you agree to be his girlfriend. In the months that follow, you and Tyler grow closer and start to fall in love. 
+
+[[Yippie!]]
+
+
+:: agree to the date {"position":"0,975","size":"100,100"}
+You agree to the date and set up a time and place to meet. When the day arrives, you get ready and head to the restaurant where Tyler is waiting for you. As the night progresses, you realize that Tyler may not be as compatible as you thought. 
+
+<img src="https://github.com/fashood10/fashood10.github.io/blob/main/dinner.jpg?raw=true" width="500" height="300">
+
+* Do you [[give Tyler a chance]] or [[end the date early]]?
+
+
+
+
+:: be single and hang out with your best friends {"position":"1075,125","size":"100,100"}
+You decide to take a break from relationships and spend more time with your best friends. You enjoy having fun and doing things that make you happy. You start to feel more confident and independent.
+
+<img src="https://github.com/fashood10/fashood10.github.io/blob/main/bar.jpg?raw=true" width="300" height="200" style="float: right; margin-right: 10px;"> 
+
+One night, while out with your friends at a local bar, you notice a handsome man sitting alone at the other end. He catches your eye and you can’t help but feel drawn to him. Your friends encourage you to approach him and strike up a conversation.
+
+*[[You decide to take a chance and talk to the man.]] or [[you feel hesitant and decide to stay with your friends.]] 
+
+
+:: block him {"position":"300,1200","size":"100,100"}
+You decide to block John and not pursue a relationship with him. You just didn't feel comfortable with the idea of meeting up with someone you've never met before, and the fact that he invited you for a hike right away made you uneasy.
+
+As you block him, you notice that he's been sending you multiple messages since the last time you spoke to him. You realize that he's not taking things well and seems to be upset about being rejected.
+
+* Do you [[reach out to him]] and explain why you no longer want to pursue a relationship or [[swipe again]] and hope he moves on?
+
+
+:: create an account using your friends photos to catfish your ex {"position":"700,350","size":"100,100"}
+You create an account using your friend's photos to catfish your ex. You know he is still on tinder because you saw his profile when you were browsing. You swipe right on him and wait for him to match with you. You want to see if he will fall for your trap and how he will react when he finds out the truth.
+
+He matches with you in a few minutes and sends you a message.
+
+Jack: Hey, you look familiar. Have we met before?
+
+* [[Say maybe, you’re not sure. Tell him you have a bad memory and you need some clues to jog it.]] [[Say that your his ex's best friend]]
+
+
+:: create an account using your information {"position":"425,500","size":"100,100"}
+As you swipe through profiles, you realize that the dating app is more than just a game. With each match, you are faced with a new set of choices that will determine your fate. 
+
+<img src="https://github.com/fashood10/fashood10.github.io/blob/main/tyler.jpg?raw=true" width="200" height="100" style="float: right; margin-right: 10px;"> 
+
+You comes across a guy named Tyler who seems like a good match. 
+
+* 6'2 
+* 24
+* Aerospace Enginner 
+* Leo 
+* Drinks and Smokes socially 
+
+* But as you're about to swipe right, you hesitate. Should you [[take a chance on Tyler]] or [[keep swiping]]?
+
+
+
+
+
+:: download tinder and play the game {"position":"500,350","size":"100,100"}
+You're not looking for anything serious, just a fun distraction. 
+
+* Do you [[create an account using your information]]  an account using your information or [[create an account using your friends photos to catfish your ex]]
+
+
+:: end the date early {"position":"50,1125","size":"100,100"}
+As the night goes on, you realize that Tyler and you don't have much in common. He talks about himself the whole time and doesn't seem to be interested in getting to know you. You try to steer the conversation towards topics that you're interested in, but he keeps bringing it back to himself.
+
+By the time the entrees arrive, you're already feeling disenchanted. You make an excuse about having an early morning and ask for the check. Tyler seems taken aback but doesn't say anything. As you say your goodbyes, you know that you don't want to see him again.
+
+As you drive back home, you feel a sense of disappointment. You had high hopes for the date and it didn't turn out the way to wanted. However, you know that it's better to be alone than to be with someone who doesn't value you.
+
+In the next few days, you focus on taking care of yourself. You go for walks in the park, read your favorite books, and cook your favorite meals. You realize that you don't need someone else to be happy and fulfilled. You can create your own happiness.
+
+While it's not the outcome that you hoped for, you come out of the experience with a renewed sense of self and a better understanding of what you're looking for in a relationship.
+
+* Do you [[keep swiping]] or [[be single and hang out with your best friends]]
+
+
+:: give Tyler a chance {"position":"150,1025","size":"100,100"}
+You decide to give Tyler a chance and continue with the date. As the night goes on, you start to feel more comfortable around him and find that you have some common interests. Despite your initial doubts, you end up having a really good time. 
+
+At the end of the night, Tyler walks you to your car and asks if you'd like to go out again sometime. 
+
+* Do you [[accept his offer]] or [[politely decline]]?
+
+
+:: give up on the chance of finding love {"position":"700,1100","size":"100,100"}
+Damn guess you tried. 
+
+Oh well your young have fun!
+
+[[be single and hang out with your best friends]]
+
+XOXO 
+~gossip girl
+
+
+:: keep swiping {"position":"225,850","size":"100,100"}
+You keep swiping left and right when you came across a guy named John. 
+ His profile read: I’m 
+ 
+ <img src="https://github.com/fashood10/fashood10.github.io/blob/main/john.jpg?raw=true" width="200" height="100" style="float: right; margin-right: 10px;"> 
+* 21
+* UNC Senior 
+* dog lover
+* piano player
+* hiker
+* I’m looking for someone who can keep up with me and my adventures
+
+But as you're about to swipe right, you hesitate. Should you [[take a chance on John]] or [[swipe again]]?
+
+
+
+
+:: make an excuse to decline {"position":"100,900","size":"100,100"}
+You decide to make an excuse and decline Tyler's date offer. You don't feel ready to meet him since he lives at home. 
+
+With Tyler out of the picture, you continue swiping on the app. 
+
+* [[keep swiping]]
+
+
+:: politely decline {"position":"25,1425","size":"100,100"}
+You thank Tyler for the invite but tell him that you don't think that you two are romantically compatible. He seems disappointed but understanding. As you drive back home, you feel relieved that you were honest with him.
+
+However, a few days later, Tyler calls you and asks if you'd be willing to give him another chance. He tells you that he feels like you two had a good connection and that he'd like to see you again. Initially, you're hesitant but Tyler is persistent and convinces you to go on a second date with him.
+
+The second date turns out to be much better than the first. Tyler seems more relaxed and genuine, and you find that you're having a good time. He suggests going on a hike together and you feel yourself warming up to the idea. By the end of the night, you realize that you're starting to like Tyler.
+
+In the next few weeks, you and Tyler continue to see each other and your relationship grows stronger. You find that you have a lot in common and enjoy spending time together. You're grateful that Tyler was persistent and convinced you to give him a second chance. Sometimes, it takes a little effort to find true happiness.
+
+[[Yippie!]]
+
+
+:: pretend to be sick and end the hike early {"position":"1650,50","size":"100,100"}
+You decide to pretend to be sick so you can end the hike early and get away from John. You tell him that you're not feeling well and need to rest for a bit. John seems annoyed but you insist that you need a break.
+
+As you sit down to catch your breath, you start to feel dizzy and lightheaded. You realize that you might be more dehydrated than you thought. John isn't paying much attention to you and is instead taking pictures of the scenery. You start to feel a sense of panic as you realize that you might be in trouble.
+
+You decide to get up and continue the hike, hoping that you can make it back to the car soon. However, as you start walking, you feel your legs start to give out. You stumble and fall, hitting your head on a rock and passing out.
+
+When you wake up, you're in a hospital bed. You learn that you were severely dehydrated and suffered a mild concussion. John had to carry you down the mountain and called for help when he found you unconscious. You feel grateful that he helped you but also angry that he didn't take your condition seriously.
+
+You realize that you should have listened to your gut and not gone on the hike with someone you didn't trust. You vow to always prioritize your safety and comfort, even if it means saying no to someone.
+
+[[be single and hang out with your best friends]]
+
+
+:: reach out to him {"position":"400,1425","size":"100,100"}
+Despite feeling uncomfortable with the idea, you decide to reach out to John. You send him a message explaining that you don't think you two are a good match and that you don't want to pursue a relationship. You also apologize if you hurt his feelings but you hope that he can understand.
+
+John doesn't respond to your message and you think that's the end of it. However, a few days later, you find out that he's been leaving negative comments on your social media accounts. You're shocked and upset by his behavior, especially since you were honest with him.
+
+You decide to block him on all your social media accounts and move on from the experience. While it wasn't the outcome you hoped for, you realize that some people won't take rejection well and it's important to prioritize your own safety and well-being.
+
+* [[be single and hang out with your best friends]]  single and hang out with your best friends]]?
+
+
+:: start {"position":"600,175","size":"100,100"}
+<h2><b>Heartbroken: Taking Time for Me</b></h2>
+
+You have been in a relationship with your boyfriend, Jack, for the past two years. You thought everything was going well until you found out that he had been cheating on you with his ex-girlfriend. You were heartbroken and didn’t know what to do. You decided to take a break from relationships and focus on yourself.
+
+You can either [[be single and hang out with your best friends]] or [[download tinder and play the game]].
+
+<img src="https://github.com/fashood10/fashood10.github.io/blob/main/breakup.jpg?raw=true" width="500" height="300">
+
+
+
+:: swipe again {"position":"375,875","size":"100,100"}
+You keep swiping left and right when you came across a guy named Kevin. 
+ His profile read: I’m 
+ 
+<img src="https://github.com/fashood10/fashood10.github.io/blob/main/kevin.jpg?raw=true" width="200" height="150" style="float: right; margin-right: 10px;"> 
+ 
+* 22
+* Enginer 
+* Christian
+* Doesn't have kids but wants kids
+* Looking for relationship
+
+
+* But as you're about to swipe right, you hesitate. Should you [[take a chance on Kevin]] or [[give up on the chance of finding love]]?
+
+
+:: take a chance on John {"position":"250,975","size":"100,100"}
+You decide to take a chance on John and swipe right. 
+
+A few hours later, you get a notification that you have a match and it's John! He messages you first and the conversation flows easily. You both discover that you have a lot in common and he invites you to go hiking with him the following weekend. 
+
+* Do you [[accept his invite]] or [[block him]]?
+
+
+:: take a chance on Kevin {"position":"450,1075","size":"100,100"}
+You decide to take a chance on Kevin and swipe right. A few minutes later, you get a notification that you have a match and it's Kevin! He sends you a message and asks about your interests and what you're looking for in a relationship. The conversation flows easily and you both realize that you have a lot in common. You feel excited and hopeful for the first time in a while.
+
+*Do you go on a [[Date with Kevin]] or [[be single and hang out with your best friends]]
+
+
+:: take a chance on Tyler {"position":"50,775","size":"100,100"}
+You decide to take a chance on Tyler. After a few messages back and forth, he asks you out on a date. 
+
+* Do you [[agree to the date]] or [[make an excuse to decline]]?
+
+
+:: wake up {"position":"150,1300","size":"100,100"}
+Your eyes flicker open, disoriented. The room is unfamiliar. 
+
+<<linkreplace "Look around.">> \
+You discover another dead body.
+Across from you, John smirks. 
+<i><b>"Welcome to the game," he says, disappearing.</b></i>
+
+You quickly find the door and [[exit the building|Outside]].
+<</linkreplace>> \
+
+
+:: you feel hesitant and decide to stay with your friends. {"position":"1250,0","size":"100,100"}
+You decide to stay with your friends and have a good time with them. They make you laugh and you feel grateful for their company. As the night goes on, you start to forget about the man at the other end of the bar. 
+
+As you and your friends decide to leave, the man stands up and starts walking over to you. Your heart races as he introduces himself and tells you he couldn't take his eyes off you all night. He asks for your number, and you feel a rush of excitement.
+
+<img src="https://github.com/fashood10/fashood10.github.io/blob/main/bar.jpg?raw=true" width="200" height="100" style="float: right; margin-right: 10px;"> 
+
+You decide to take a chance and give him your number. Over the next few weeks, you and the man, whose name is Jack, start to see each other more often. You both enjoy spending time together, and soon you realize that you have developed strong feelings for him. 
+
+What do you want to do?
+* [[You decide to give things a chance with Jack and start a new relationship.]] or [[You decide to wait a little longer and make sure your feelings are genuine.]]
+
+
+:: you feel hesitant and decide to stay with your friends.\  {"position":"1475,225","size":"100,100"}
+You decide to stay with your friends and have a good time with them. They make you laugh and you feel grateful for their company. As the night goes on, you start to forget about the man at the other end of the bar. 
+
+As you and your friends decide to leave, the man stands up and starts walking over to you. Your heart races as he introduces himself and tells you he couldn't take his eyes off you all night. He asks for your number, and you feel a rush of excitement.
+
+<img src="https://github.com/fashood10/fashood10.github.io/blob/main/bar.jpg?raw=true" width="200" height="100" style="float: right; margin-right: 10px;"> 
+
+You decide to take a chance and give him your number. Over the next few weeks, you and the man, whose name is Jack, start to see each other more often. You both enjoy spending time together, and soon you realize that you have developed strong feelings for him. 
+
+What do you want to do?
+* [[You decide to give things a chance with Jack and start a new relationship.]] or [[You decide to wait a little longer and make sure your feelings are genuine.]]
+
+
+:: StoryStylesheet [stylesheet]
+body {
+    background-color: #ffe6f2; /* Light pink background color */
+    color: #ff007f; /* Dark pink text color */
+}
+
+.passage {
+    border-color: #ff007f; /* Dark pink border for passages */
+}
+
+a {
+    color: #ff007f; /* Dark pink color for links */
+}
+
+a:hover {
+    color: #ff66b2; /* Light pink color on link hover */
+}
+
+h2 {
+  color: red;
+}
+
+#items {color: purple;}
+
+.passage img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
